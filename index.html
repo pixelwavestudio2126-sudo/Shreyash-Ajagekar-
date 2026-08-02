@@ -5,153 +5,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pixel Wave Studio</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0d1117;
-color:#fff;
-}
-
-header{
-background:#111827;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#00d4ff;
-}
-
-nav a{
-color:#fff;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:50px;
-color:#00d4ff;
-}
-
-.hero p{
-font-size:20px;
-margin:20px 0;
-}
-
-.btn{
-background:#00d4ff;
-padding:15px 30px;
-border-radius:30px;
-color:#000;
-font-weight:bold;
-text-decoration:none;
-}
-
-section{
-padding:60px 20px;
-text-align:center;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.card{
-background:#161b22;
-padding:25px;
-border-radius:10px;
-}
-
-footer{
-background:#111827;
-padding:20px;
-text-align:center;
-margin-top:40px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body>
 
 <header>
-<div class="logo">Pixel Wave Studio</div>
+<div class="logo">
+<img src="logo.png" alt="Pixel Wave Studio Logo">
+</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
 <h1>Ride the Wave of Creativity</h1>
-<p>Professional Graphic Design | Branding | Social Media | Printing</p>
 
-<a class="btn" href="https://wa.me/91XXXXXXXXXX">Contact on WhatsApp</a>
+<p>Professional Graphic Design | Branding | Printing | Social Media Design</p>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="btn">
+<i class="fab fa-whatsapp"></i> Chat on WhatsApp
+</a>
+
+</section>
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Pixel Wave Studio is a professional graphic design and printing studio.
+        We create creative logos, social media posts, banners, flex designs,
+        business cards, wedding cards, and complete branding solutions.
+    </p>
 </section>
 
-<section>
-<h2>Our Services</h2>
+<section id="services">
+    <h2>Our Services</h2>
 
-<div class="services">
+    <div class="services">
 
-<div class="card">
-<h3>Logo Design</h3>
-<p>Creative business logo designs.</p>
-</div>
+        <div class="card">
+            <h3>Logo Design</h3>
+            <p>Creative & Modern Brand Logos.</p>
+        </div>
 
-<div class="card">
-<h3>Social Media</h3>
-<p>Instagram & Facebook Post Design.</p>
-</div>
+        <div class="card">
+            <h3>Social Media Design</h3>
+            <p>Instagram & Facebook Posts.</p>
+        </div>
 
-<div class="card">
-<h3>Banner Design</h3>
-<p>Flex, Poster & Visiting Card Design.</p>
-</div>
+        <div class="card">
+            <h3>Flex & Banner</h3>
+            <p>Professional Banner & Flex Design.</p>
+        </div>
 
-<div class="card">
-<h3>Brand Identity</h3>
-<p>Professional Branding Solutions.</p>
-</div>
+        <div class="card">
+            <h3>Printing</h3>
+            <p>Visiting Cards, Flyers & Brochures.</p>
+        </div>
 
-</div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>Creative work from Pixel Wave Studio will be showcased here.</p>
+</section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Pixel Wave Studio</strong></p>
+    <p>Email: pixelwavestudio2126@gmail.com</p>
+    <p>Location: Mumbai, Maharashtra</p>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="btn">
+        WhatsApp Now
+    </a>
 </section>
 
 <footer>
-
-<h3>Pixel Wave Studio</h3>
-
-<p>Email: pixelwavestudio2126@gmail.com</p>
-
-<p>© 2026 Pixel Wave Studio. All Rights Reserved.</p>
-
+    <p>© 2026 Pixel Wave Studio. All Rights Reserved.</p>
+    <p>Ride the Wave of Creativity.</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

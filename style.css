@@ -75,3 +75,21 @@ footer{
     background: url("file_0000000040908211b4aadac21b415b5f.png") center center/cover no-repeat;
     min-height: 100vh;
 }
+.hero-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    animation: fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

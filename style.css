@@ -27,7 +27,20 @@ header{
 }
 
 .logo img{
-    height:70px;
+    .logo{
+    width:180px;
+    animation: logoIntro 2s ease;
+}
+
+@keyframes logoIntro{
+    0%{
+        opacity:0;
+        transform:scale(0.5);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
 }
 
 nav a{

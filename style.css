@@ -71,3 +71,7 @@ footer{
 .gallery img:hover{
   transform:scale(1.05);
 }
+.hero{
+    background: url("images/hero-bg.png") center center/cover no-repeat;
+    min-height: 100vh;
+}

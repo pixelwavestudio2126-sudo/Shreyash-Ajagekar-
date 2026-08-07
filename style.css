@@ -429,3 +429,36 @@ opacity:1;
     width:220px;
     margin:auto;
 }
+#counter{
+    padding:80px 20px;
+    background:#0d1117;
+}
+
+#counter .container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.counter-box{
+    background:#161b22;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.counter-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(212,175,55,.3);
+}
+
+.counter-box h2{
+    color:#D4AF37;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.counter-box p{
+    color:#fff;
+}

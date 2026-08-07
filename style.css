@@ -23,8 +23,8 @@ header{
     justify-content:space-between;
     align-items:center;
     padding:20px 50px;
-    background:#111827;
-}
+    background: rgba(15, 23, 42, 0.95);
+backdrop-filter: blur(10px);
 
 .logo img{
     .logo{

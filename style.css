@@ -27,9 +27,9 @@ header{
 backdrop-filter: blur(10px);
 
 .logo img{
-    .logo{
-    width:180px;
-    animation: logoIntro 2s ease;
+    .logo img{
+    width:90px;
+    height:auto;
 }
 
 @keyframes logoIntro{

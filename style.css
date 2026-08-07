@@ -191,13 +191,15 @@ margin-top:50px;
 }
 
 .gallery img{
-width:100%;
-height:280px;
-object-fit:cover;
-border-radius:20px;
-transition:.35s;
-cursor:pointer;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
+    width:100%;
+    height:auto;
+    max-height:280px;
+    object-fit:contain;
+    background:#111;
+    border-radius:20px;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .gallery img:hover{

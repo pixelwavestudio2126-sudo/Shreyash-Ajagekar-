@@ -69,26 +69,49 @@ nav a:hover{
 }
 
 .hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:100px 20px;
-}
+    background: linear-gradient(rgba(11,18,32,.75), rgba(11,18,32,.75)), url("images/hero-bg.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
 .hero h1{
+    font-size:70px;
+    font-weight:700;
     color:#FFFFFF;
+    margin-bottom:20px;
+    text-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
 
 .hero p{
+    font-size:22px;
     color:#D1D5DB;
+    max-width:700px;
+    line-height:1.8;
+    margin-bottom:30px;
 }
 
 .btn{
+    display:inline-block;
+    padding:15px 35px;
     background:#D4AF37;
     color:#0B1220;
     border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:all .3s ease;
+    box-shadow:0 10px 25px rgba(212,175,55,.35);
 }
 
 .btn:hover{
     background:#F4C542;
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(212,175,55,.5);
 }
 footer{
     text-align:center;

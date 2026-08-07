@@ -363,3 +363,38 @@ text-align:center;
 color:#d1d5db;
 margin-bottom:40px;
 }
+/* LIGHTBOX */
+
+.lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.92);
+justify-content:center;
+align-items:center;
+z-index:99999;
+cursor:pointer;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:15px;
+border:4px solid #D4AF37;
+box-shadow:0 0 40px rgba(212,175,55,.4);
+animation:zoom .35s ease;
+}
+
+@keyframes zoom{
+from{
+transform:scale(.7);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(-45deg, #0f172a, #1e3a8a, #7c3aed, #06b6d4);
+    background: linear-gradientbackground: linear-gradient(135deg, #0F172A, #1E293B, #0B1120);
     background-size: 400% 400%;
     animation: gradientBG 12s ease infinite;
 }
@@ -78,7 +78,8 @@ nav a{
 footer{
     text-align:center;
     padding:30px;
-    background:#111827;
+    background:background: rgba(15, 23, 42, 0.95);
+backdrop-filter: blur(10px);
 }
 .gallery{
   display:grid;

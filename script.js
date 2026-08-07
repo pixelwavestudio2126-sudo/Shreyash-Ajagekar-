@@ -19,8 +19,11 @@ counters.forEach(counter => {
             counter.innerText = Math.ceil(count + increment);
             setTimeout(updateCounter, 20);
         } else {
-            counter.innerText = target;
-        }
+           if (target >= 1000) {
+    counter.innerText = (target / 1000) + "K+";
+} else {
+    counter.innerText = target;
+}
     };
 
     updateCounter();

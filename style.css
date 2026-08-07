@@ -27,11 +27,10 @@ header{
 backdrop-filter: blur(10px);
 
 .logo img{
-    .logo img{
-    width:90px;
+    width:80px;
     height:auto;
+    animation:logoIntro 2s ease;
 }
-
 @keyframes logoIntro{
     0%{
         opacity:0;

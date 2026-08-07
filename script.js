@@ -10,24 +10,24 @@ function closeImage(){
 const counters = document.querySelectorAll(".count");
 
 counters.forEach(counter => {
-    const updateCounter = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-        const increment = target / 100;
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText.replace(/\D/g, "");
+    const increment = Math.ceil(target / 100);
 
-        if (count < target) {
-            counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCounter, 20);
-        } else {
-  if (count < target) {
-    counter.innerText = Math.ceil(count + increment);
-    setTimeout(updateCounter, 20);
-} else {
-    if (target >= 1000) {
-        counter.innerText = (target / 1000) + "K+";
-    } else if (target == 100) {
-        counter.innerText = "100%";
+    if (count < target) {
+      counter.innerText = count + increment;
+      setTimeout(updateCounter, 20);
     } else {
+      if (target >= 1000) {
+        counter.innerText = (target / 1000) + "K+";
+      } else if (target === 100) {
+        counter.innerText = "100%";
+      } else {
         counter.innerText = target;
+      }
     }
-}
+  };
+
+  updateCounter();
+});

@@ -20,12 +20,9 @@ counters.forEach(counter => {
         const increment = Math.ceil(target / 100);
 
         if (count < target) {
-
             counter.innerText = count + increment;
             setTimeout(updateCounter, 20);
-
         } else {
-
             if (target >= 1000) {
                 counter.innerText = (target / 1000) + "K+";
             } else if (target === 100) {
@@ -33,10 +30,8 @@ counters.forEach(counter => {
             } else {
                 counter.innerText = target;
             }
-
         }
     };
 
     updateCounter();
-
 });

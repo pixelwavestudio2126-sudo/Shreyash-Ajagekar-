@@ -1,7 +1,15 @@
-body {
+:root{
+  --bg:#0B1220;
+  --bg2:#111827;
+  --primary:#D4AF37;
+  --primary-hover:#F4C542;
+  --text:#FFFFFF;
+  --text-light:#D1D5DB;
+  --card:#1F2937;
+}body {
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(135deg, #0F172A, #1E293B, #0B1120);
+    background: linear-gradient(135deg,#0B1220,#111827,#1F2937);
     background-size: 400% 400%;
     animation: gradientBG 12s ease infinite;
 }
@@ -19,13 +27,9 @@ body {
 }
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
-    background: rgba(15, 23, 42, 0.95);
-backdrop-filter: blur(10px);
-
+    background:rgba(11,18,32,.9);
+    backdrop-filter:blur(12px);
+}
 .logo img{
     width:80px;
     height:auto;
@@ -55,25 +59,22 @@ nav a{
 }
 
 .hero h1{
-    font-size:55px;
-    color:#00d4ff;
+    color:#FFFFFF;
 }
 
 .hero p{
-    font-size:22px;
-    margin:20px 0;
+    color:#D1D5DB;
 }
 
 .btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#00d4ff;
-    color:#000;
-    text-decoration:none;
-    border-radius:40px;
-    font-weight:bold;
+    background:#D4AF37;
+    color:#0B1220;
+    border-radius:50px;
 }
 
+.btn:hover{
+    background:#F4C542;
+}
 footer{
     text-align:center;
     padding:30px;

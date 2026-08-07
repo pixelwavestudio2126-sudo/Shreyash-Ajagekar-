@@ -19,12 +19,15 @@ counters.forEach(counter => {
             counter.innerText = Math.ceil(count + increment);
             setTimeout(updateCounter, 20);
         } else {
-           if (target >= 1000) {
-    counter.innerText = (target / 1000) + "K+";
+  if (count < target) {
+    counter.innerText = Math.ceil(count + increment);
+    setTimeout(updateCounter, 20);
 } else {
-    counter.innerText = target;
+    if (target >= 1000) {
+        counter.innerText = (target / 1000) + "K+";
+    } else if (target == 100) {
+        counter.innerText = "100%";
+    } else {
+        counter.innerText = target;
+    }
 }
-    };
-
-    updateCounter();
-});

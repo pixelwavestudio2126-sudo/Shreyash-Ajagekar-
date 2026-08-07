@@ -27,8 +27,18 @@ color: var(--text);
     }
 }
 header{
-background: rgba(11,18,32,0.9);
-border-bottom: 1px solid rgba(212,175,55,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(11,18,32,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212,175,55,0.2);
+    z-index: 1000;
 }
 .logo img{
     width:80px;
@@ -50,7 +60,12 @@ nav a{
     color:#fff;
     text-decoration:none;
     margin:0 15px;
-    font-weight:bold;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#D4AF37;
 }
 
 .hero{
